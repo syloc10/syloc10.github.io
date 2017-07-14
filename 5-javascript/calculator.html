@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function calculate() {
+        var x = document.getElementById("first").value;
+        var y = document.getElementById("second").value;
+        var d = document.getElementById("decision").value;
+        if (d=="*")
+           result = x*y;
+        else if(d=="/")
+           result = x/y;
+        alert(result)}
+</script>
+  <title></title>
+</head>
+<body>
+<h1></h1>
+<select id="decision">
+    <option value="*">Multiply</option>
+    <option value="/">Divide</option>
+</select><br>
+<input id="first" type="text">
+<input id="second" type="text"><br>
+<input type="button" value="Calculate" onclick="calculate()">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+
+<style type="text/css">
+body {margin: 30px;}
+</style>
+</head>
+
+<body>
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+
+
+
+
+
+
+
+
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+
+</body>
+</html>
